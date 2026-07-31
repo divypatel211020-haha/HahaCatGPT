@@ -3,26 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HahaCatGPT Test</title>
+
+    <title>HahaCatGPT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h2>HahaCatGPT</h2>
+<div class="app">
 
-    <p id="status">Loading AI...</p>
+    <header class="header">
 
-    <input
-        id="message"
-        type="text"
-        placeholder="Talk to HahaCatGPT..."
-    >
+        <img
+            class="header-pfp"
+            src="hahacat.jpg"
+            alt="HahaCatGPT"
+        >
 
-    <button id="send">Send</button>
+        <h1>HahaCatGPT</h1>
 
-    <pre id="chat"></pre>
+        <div id="status">
+            Loading AI...
+        </div>
 
-    <script type="module" src="app.js"></script>
+    </header>
+
+
+    <main id="chat" class="chat">
+
+        <div class="welcome">
+
+            <img
+                src="hahacat.jpg"
+                class="welcome-pfp"
+                alt="HahaCatGPT"
+            >
+
+            <h2>HahaCatGPT</h2>
+
+            <p>
+                Hey! I'm HahaCatGPT 🐱
+            </p>
+
+            <p>
+                Ask me anything.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <footer class="input-area">
+
+        <textarea
+            id="message"
+            placeholder="Type your message..."
+            rows="1"
+            disabled
+        ></textarea>
+
+        <button
+            id="send"
+            disabled
+        >
+            SEND
+        </button>
+
+    </footer>
+
+</div>
+
+
+<script type="module" src="app.js"></script>
 
 </body>
 </html>
